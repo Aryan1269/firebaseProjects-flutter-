@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:try2/ui/Login_with_phone.dart';
 import 'package:try2/ui/postScreen.dart';
 import 'package:try2/ui/roundButton.dart';
 import 'package:try2/ui/signUp.dart';
@@ -145,7 +146,27 @@ class _LoginPageState extends State<LoginPage> {
                         child: Text("Sign Up"))
                   ],
                 ),
-              )
+              ),
+              SizedBox(
+                height: 10,
+              ),
+              InkWell(
+                onTap: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => LoginPhone()));
+                },
+                child: Container(
+                  height: 50,
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(50),
+                      border: Border.all(
+                        color: Colors.black,
+                      )),
+                  child: Center(
+                    child: Text('Login with phone'),
+                  ),
+                ),
+              ),
             ],
           ),
         ),
