@@ -145,6 +145,21 @@ class _SignUpState extends State<SignUp> {
 
 
 /*
+
+To clear form
+
+//rest is method
+_formKey.currentState.reset();
+
+To clear textfield 
+
+ //clear is method 
+ controller.clear();
+ or 
+  // create a new TextEditingController instance
+  _textEditingController = TextEditingController();
+
+
 Valid:
 
 example@email.com
