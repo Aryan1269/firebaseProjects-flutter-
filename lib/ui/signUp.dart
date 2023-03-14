@@ -4,7 +4,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
-import 'package:try2/ui/postScreen.dart';
+import 'package:try2/post/postScreen.dart';
 import 'package:try2/ui/roundButton.dart';
 
 class SignUp extends StatefulWidget {
@@ -105,7 +105,7 @@ class _SignUpState extends State<SignUp> {
                         password: passwordController.text,
                       );
                       // Handle success here
-                      Navigator.push(
+                      Navigator.pushReplacement(
                           context,
                           MaterialPageRoute(
                               builder: (context) => PostScreen()));

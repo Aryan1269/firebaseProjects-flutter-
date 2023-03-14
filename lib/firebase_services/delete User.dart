@@ -5,7 +5,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
 import '../ui/loginPage.dart';
-import '../ui/postScreen.dart';
+import '../post/postScreen.dart';
 
 
 class Firebase_deleteUser {

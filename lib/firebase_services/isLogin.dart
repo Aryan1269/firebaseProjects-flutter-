@@ -4,7 +4,7 @@ import 'dart:async';
 
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:try2/ui/postScreen.dart';
+import 'package:try2/post/postScreen.dart';
 
 import '../ui/loginPage.dart';
 
@@ -16,7 +16,7 @@ class firebase_login {
     if (user != null) {
       Timer(
           Duration(seconds: 2),
-          (() => Navigator.push(
+          (() => Navigator.pushReplacement(
               context, MaterialPageRoute(builder: (context) => PostScreen()))));
     }
     else{
