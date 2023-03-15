@@ -51,7 +51,8 @@ class _AddPostScreenState extends State<AddPostScreen> {
                 databaseRef
                     .child(DateTime.now().millisecondsSinceEpoch.toString()
                     //can add another child
-                    ).set({
+                    ).child('comments')//like this
+                    .set({
                   'id': DateTime.now().millisecondsSinceEpoch.toString(),
                   'title': postController.text,
                 }).then((value) {
@@ -76,6 +77,3 @@ class _AddPostScreenState extends State<AddPostScreen> {
     );
   }
 }
-
-
-                    // after).child('comments')//like this
