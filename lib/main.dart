@@ -27,3 +27,7 @@ class MyApp extends StatelessWidget {
   }
 }
 
+// git commit -am "Commit message"
+// *** only works for modified or deleted files ***
+
+
